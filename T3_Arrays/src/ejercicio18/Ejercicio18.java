@@ -19,7 +19,7 @@ public class Ejercicio18 {
             numeros = 0;
             letras = 0;      // Hay que reiniciar los valores para cada contraseña/elemento
 
-            for (int j = 0; j < contrasenas[i].length(); j++) { //Para cada caracter de la contraseña nº "i":
+            for (int j = 0; j < contrasenas[i].length(); j++) { //Para cada carácter de la contraseña nº "i":
                 numeros = contarNumeros(contrasenas[i]);
                 letras = contarLetras(contrasenas[i]);
                 // He contado los nº y letras de la contraseña nº i:
