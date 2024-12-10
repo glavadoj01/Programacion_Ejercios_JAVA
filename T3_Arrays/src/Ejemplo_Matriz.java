@@ -6,13 +6,13 @@ Matriz5x5 =:    Fil0        m00     m01     m02     m03     m04
                 Fil3        m30     m31     m32     m33     m34
                 Fil4        m40     m41     m42     m43     m44
 
-Un ELEMENTO DE UNA MATRIZ siempre tiene 2 indices. El 1º para la fila y el 2º para la columna.
+Un ELEMENTO DE UNA MATRIZ siempre tiene 2 índices. El 1º para la fila y el 2º para la columna.
 
-índice - fila i: desde 0 hasta (matriz.length - 1)          El menos 1 es xq empieza en cero.
+Índice "fila i": desde 0 hasta (matriz.length - 1)          El menos 1 es xq empieza en cero.
                                                             En el FOR no lo ponemos xq ponemos MENOR QUE matriz.length
                                                             i < matriz.length    es igual    i <= (matriz.length - 1)
 
-índice - columna j: desde 0 hasta (matriz[i].length - 1)    matriz[i] hace referencia a la "Fila i"
+Índice "columna j": desde 0 hasta (matriz[i].length - 1)    matriz[i] hace referencia a la "Fila i"
                                                             matriz[i].length me devuelve la longitud de la "Fila i"
 
 Para llamar o trabajar con un elemento concreto   matriz[i][j]
@@ -40,7 +40,7 @@ public class Ejemplo_Matriz {
             Aquí puedo hacer algo antes de recorrer la fila. Se hará para cada fila
                 Ej's:  Reiniciar contadores/sumadores; Imprimir un texto para cada fila; ...
             */
-            for (int j = 0; j < unaMatrizOrdenada[i].length; j++) {     // Reccorro los elementos de esa fila
+            for (int j = 0; j < unaMatrizOrdenada[i].length; j++) {     // Recorro los elementos de esa fila
                 unaMatrizOrdenada[i][j] = contadorOrden;                // La vamos a llenar con los nº's en orden
                 contadorOrden++;                                        // Tras llenar el elemento de la matriz,
             }                                                           // actualizo el nº para el siguiente
