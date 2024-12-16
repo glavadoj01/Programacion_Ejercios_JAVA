@@ -11,10 +11,10 @@ Orden:<br>
   T2_Introducción<br>
   T3_Iniciales<br>
   T3_Profundizacióm<br>
-  Examen_Noviembre<br>
+  Examen_Noviembre   Pass: valencia<br>
   T3_Arrays<br>
   T3_Funciones<br>
-  Examen_Diciembre<br>
+  Examen_Diciembre   Pass: alepo<br>
   Examen_2_Prueba (WIP)<br>  
 <br>
 Extra - Acepta el Reto: Problemas de Herencias y Terrenos<br>
