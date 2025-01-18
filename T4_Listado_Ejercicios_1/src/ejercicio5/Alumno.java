@@ -5,7 +5,7 @@ a. Dos atributos que guarden sendas notas (tipo double).
 b. Crea los métodos get/set correspondientes, modifica también el constructor para que incluya estas notas.
 c. Crea un método que devuelva la media de las notas (double).
 d. Crea un método que devuelva número de expediente, nombre y nota media.
- */
+*/
 
 import java.time.LocalDate;
 
