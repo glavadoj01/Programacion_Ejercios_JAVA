@@ -19,7 +19,7 @@ continuación. Prueba sus métodos.
 
 // Definición de clase
 public class Empleado {
-    private int id;
+    private final int id;
     private String nombre;
     private String apellido;
     private double salarioMensual;

@@ -1,18 +1,18 @@
-package ejercicio4;
+package ejercicio7;
+
+/*
+Diseña un programa Java que trabaje con la clase DvdCine creada en el ejercicio anterior.
+Crea una clase (GestionDvd) que incluya como atributo un array de objetos pertenecientes
+a la clase DvdCine y como métodos las opciones del menú. El menú de la aplicación sería:
+Menú de opciones:
+        1. Mostrar la lista de películas (Título y productora)
+        2. Mostrar la película de más duración (Título y minutos)
+        3. Pedir un género y mostrar el título de las pelis de ese género.
+        4. Duración de la peli. Pedir título y mostrar su duración.
+*/
 
 import java.util.ArrayList;
 import java.util.Objects;
-
-/*
-Diseña un programa Java que trabaje con una clase llamada DvdCine.
-a. Su atributos serán: título, director, productora, actores principales, género, resumen y duración.
-b. Debe incluir un constructor que reciba como parámetros los atributos.
-c. Crea un método llamado esThriller que devuelva true o false según la película sea o no de este género.
-d. Crea todos los métodos gets/sets.
-e. Crea un método llamada mismaProductora que reciba un objeto de la clase DvdCine como parámetro.
-   Este método devuelve true o false si el objeto utilizado con el método es de la misma productora que el pasado como parámetro.
-f. Crea objetos y prueba estos métodos.
- */
 
 public class DvdCine {
     private String titulo;
@@ -99,15 +99,16 @@ public class DvdCine {
         return Generos.THRILLER.equals(this.genero);
         /* También vale
         return this.genero.equals(Generos.THRILLER);
+        return this.genero == Generos.THRILLER;
          */
     }
 
     public boolean mismaProductora(DvdCine cine) {
-        return this.productora.equals(cine.getProductora());
+        return this.productora.equalsIgnoreCase(cine.getProductora());
     }
 
     // Métodos sobreescritos
-    @Override
+    @Override // Es igual si: Mismo Título & Director (resto no requerido)
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         DvdCine dvdCine = (DvdCine) o;

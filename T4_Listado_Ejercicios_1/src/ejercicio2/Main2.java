@@ -17,7 +17,7 @@ continuación. Prueba sus métodos.
         su salario y obtén el salario anual.
 */
 
-public class main {
+public class Main2 {
     public static void main(String[] args) {
         Empleado empleado1 = new Empleado("Alicia", "García García",1100.85);
         Empleado empleado2 = new Empleado("Bob", "Hernandez Hernandez",1234.56);

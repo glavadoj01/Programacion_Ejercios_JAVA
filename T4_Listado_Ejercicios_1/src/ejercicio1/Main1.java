@@ -9,11 +9,11 @@ y curso en el que se matricula. La clase debe incluir un constructor y los méto
 y set correspondientes y toString. Instancia varios objetos de esta clase y prueba los
 métodos creados.
 */
-public class Main {
+public class Main1 {
     public static void main(String[] args) {
-        Alumno persona1 = new Alumno(1234, "Alicia", "García García", LocalDate.of(1995, 01, 25), "Programación");
-        Alumno persona2 = new Alumno(4321, "Bob", "Hernandez Hernandez", LocalDate.of(1998, 11, 02), "Programación");
-        Alumno persona3 = new Alumno(5678, "Catalina", "Hernandez García", LocalDate.of(2000, 04, 15), "Bases de Datos");
+        Alumno persona1 = new Alumno(1234, "Alicia", "García García", LocalDate.of(1995, 1, 25), "Programación");
+        Alumno persona2 = new Alumno(4321, "Bob", "Hernandez Hernandez", LocalDate.of(1998, 11, 2), "Programación");
+        Alumno persona3 = new Alumno(5678, "Catalina", "Hernandez García", LocalDate.of(2000, 4, 15), "Bases de Datos");
 
         Alumno alumnoParaEvaluar = persona1;
         System.out.printf("Alumno 1: %s\t%s\t", alumnoParaEvaluar.getNombre(), alumnoParaEvaluar.getApellido());

@@ -12,7 +12,7 @@ e. Crea un método llamada mismaProductora que reciba un objeto de la clase DvdC
 f. Crea objetos y prueba estos métodos.
  */
 
-public class Main {
+public class Main4 {
     public static void main(String[] args) {
         ArrayList<String> listaActores = new ArrayList<>();
         listaActores.add("Ana");
@@ -23,7 +23,7 @@ public class Main {
         listaActores.add("Luis");
         listaActores.add("Maria");
         DvdCine cine1 = new DvdCine("Hola World", "Mario", "ies",
-                listaActores, Generos.Acción, "Resumen opcional", 120);
+                listaActores, Generos.ACCION, "Resumen opcional", 120);
         System.out.println(cine1);
         if (cine1.esThriller()) {
             System.out.println("El cine 1 es un Thriller");
@@ -32,7 +32,7 @@ public class Main {
         }
 
         DvdCine cine2 = new DvdCine("Adios World", "Angel",
-                "ies", listaActores, Generos.Thriller, "The End of the World", 180);
+                "ies", listaActores, Generos.THRILLER, "The End of the World", 180);
 
         if (cine1.mismaProductora(cine2)) {
             System.out.println("El cine 2 es de la misma Productora que el Cine 1");

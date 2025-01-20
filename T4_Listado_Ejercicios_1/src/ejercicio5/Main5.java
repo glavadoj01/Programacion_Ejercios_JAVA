@@ -9,7 +9,7 @@ d. Crea un método que devuelva número de expediente, nombre y nota media.
 
 import java.time.LocalDate;
 
-public class Main {
+public class Main5 {
     public static void main(String[] args) {
         Alumno persona1 = new Alumno(1234, "Alicia", "García García", LocalDate.of(1995, 1, 25), "Programación", 5.7, 8.5);
         Alumno persona2 = new Alumno(4321, "Bob", "Hernandez Hernandez", LocalDate.of(1998, 11, 2), "Programación", 4.4, 3.3);

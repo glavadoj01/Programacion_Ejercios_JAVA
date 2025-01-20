@@ -13,7 +13,7 @@ Añade un nuevo método que devuelva un String con las coordenadas en conjunto.
 Crea dos objetos Taxi y prueba sus métodos.
 */
 
-public class main {
+public class Main3 {
     public static void main(String[] args) {
         Taxi coche1 = new Taxi(12345, Distrito.Sur, Tipo_Motor.Diesel, 123.45, 321.54);
         Taxi coche2 = new Taxi(67890, Distrito.Norte, Tipo_Motor.Gasolina);
