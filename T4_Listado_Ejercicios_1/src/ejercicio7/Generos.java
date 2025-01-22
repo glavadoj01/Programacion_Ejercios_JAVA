@@ -8,9 +8,9 @@ public enum Generos {
     DRAMA("Drama"),
     THRILLER("Thriller"),
     FANTASIA("Fantasia"),
-    FICCION("Ficción"),;
+    FICCION("Ficción");
 
-    private String name;
+    private final String name;
 
     Generos(String name) {
         this.name = name;
