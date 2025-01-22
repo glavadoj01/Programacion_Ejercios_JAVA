@@ -20,6 +20,8 @@ public class ProgramaSoftware {
     private String desarrolladora;
     private Licencia licencia;
     private double precio;
+
+
     private static int contadorProgramas = 0;
     public static Random crearRandom = new Random();
 

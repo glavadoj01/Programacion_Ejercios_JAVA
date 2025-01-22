@@ -1,9 +1,9 @@
 package ejercicio9;
 
 public enum Funcion {
-    SO ("Sistema Operativo"),
-    SERVER("Servidor de Bases de Datos"),
-    OFIMA("Ofimática");
+    SO("Sistema Operativo (SO)"),
+    SERVER("Servidor de Bases de Datos (SERVER)"),
+    OFIMA("Ofimática (OFIMA)"),;
 
     private final String name;
 
@@ -16,11 +16,17 @@ public enum Funcion {
     }
 
     public static boolean esFuncionPrograma(String entrada) {
-        try{
+        try {
             Funcion.valueOf(entrada.toUpperCase());
             return true;
-        } catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             return false;
+        }
+    }
+
+    public static void mostrarFunciones() {
+        for (Funcion funcion : Funcion.values()) {
+            System.out.println(funcion.getName());
         }
     }
 }

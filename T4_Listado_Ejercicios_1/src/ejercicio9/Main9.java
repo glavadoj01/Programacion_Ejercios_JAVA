@@ -14,6 +14,7 @@ Menú
 7. Salir
 */
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -35,15 +36,17 @@ public class Main9 {
             System.out.println();
             switch (op) {
                 case 1:
-                    insertarProgramaNuevo();
+                    salidaPrograma = crearProgramaNuevo();
+                    listaGestion.agregarProgramaEnLista(salidaPrograma);
                     break;
                 case 2:
                     listaGestion.mostrarLista();
                     break;
                 case 3:
+                    Licencia.mostrarLicencias();
                     salidaLista.clear();
-                    System.out.print("Ingresar un tipo de licencia para buscar: ");
-                    buscar = escanear.next();
+                    System.out.print("Ingresar un tipo de Licencia (expresión entre paréntesis) para buscar: ");
+                    buscar = escanear.next().toUpperCase();
                     salidaLista = listaGestion.filtarLicencia(buscar);
                     if (salidaLista.isEmpty()) {
                         System.out.println("No existe ningún programa con esa licencia");
@@ -54,14 +57,20 @@ public class Main9 {
                     }
                     break;
                 case 4:
-                    salidaLista.clear();
-                    System.out.print("Ingresar un tipo de Función para buscar: ");
-                    buscar = escanear.next();
-                    salidaLista = listaGestion.filtarFuncion(buscar);
-                    if (salidaLista.isEmpty()) {
+                    Funcion.mostrarFunciones();
+                    salidaLista.clear(); // Como uso la variable "salidaLista" en dos apartados,
+                                        // o por si repite el mismo varias veces, pues la vacío
+                    System.out.print("Ingresar un tipo de Función (expresión entre paréntesis) para buscar: ");
+                    buscar = escanear.next().toUpperCase(); // Pregunto al usuario y guardo el String que quiere buscar
+                    salidaLista = listaGestion.filtarFuncion(buscar); // Hasta aquí me da igual que luego sea un enum o lo que sea
+                    // el usuario introduce un String, se lo paso a mi metodo y me devuelve una lista de programas que tienen esa función
+                    // Y si no hay ninguno? => Devuelve "empety" o null, o algo así.
+                    if (salidaLista.isEmpty()) { //Si la lista que sale esta vacia, imprime esto, y si no
                         System.out.println("No existe ningún programa con ese tipo de Función");
-                    } else {
+                    } else { // imprimo todos los que hayan salido
                         for (ProgramaSoftware programa : salidaLista) {
+                            // para cada "Objeto Programa" que llamo aquí "progrmama" tmb (muy original) en la lista: "salidaLista"
+                            // for each = por cada
                             System.out.println(programa);
                         }
                     }
@@ -101,10 +110,11 @@ public class Main9 {
                 Introducir opción numérica:""");
     }
 
-    public static void insertarProgramaNuevo() {
+    public static ProgramaSoftware crearProgramaNuevo() {
         ProgramaSoftware nuevo = new ProgramaSoftware();
         String valor;
-        int num;
+        double num;
+        int[] fechas = new int[3];
 
         System.out.print("Ingrese el nombre del programa: ");
         valor = escanear.nextLine();
@@ -125,11 +135,20 @@ public class Main9 {
         }
         nuevo.setFuncion(Funcion.valueOf(valor));
 
+        System.out.println("Ingrese el año de lanzamiento: ");
+        fechas[0] = escanear.nextInt();
+        System.out.println("Ingrese el mes de lanzamiento: ");
+        fechas[1] = escanear.nextInt();
+        System.out.println("Ingrese el día de lanzamiento: ");
+        fechas[2] = escanear.nextInt();
+        nuevo.setAnnoLanzamiento(LocalDate.of(fechas[0], fechas[1], fechas[2]));
 
         System.out.println("Introduzca la Desarrolladora: ");
+        valor = escanear.nextLine();
+        nuevo.setDesarrolladora(valor);
 
         while (true) {
-            Licencia.mostrarLicenciass();
+            Licencia.mostrarLicencias();
             System.out.print("Introduzca la Licencia del programa: ");
             valor = escanear.nextLine().toUpperCase();
             if (Licencia.esLicenciaPrograma(valor)) {
@@ -138,5 +157,11 @@ public class Main9 {
             System.out.println("ERROR - Elegir función enumerada");
         }
         nuevo.setLicencia(Licencia.valueOf(valor));
+
+        System.out.println("Introduzca el precio del programa: ");
+        num = escanear.nextDouble();
+        nuevo.setPrecio(num);
+
+        return nuevo;
     }
 }
