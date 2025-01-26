@@ -2,7 +2,7 @@ package ejercicio9;
 
 /*
 Diseña también una clase llamada GestionProgramas que contendrá:
-        - un ArrayList de 25 elementos de la clase Programa
+        - un ArrayList de elementos de la clase Programa
         - métodos que sirvan para programar las funciones del siguiente menú:
 Menú
 1. Insertar nuevo programa (controlar elementos libres)
@@ -69,7 +69,7 @@ public class Main9 {
                         System.out.println("No existe ningún programa con ese tipo de Función");
                     } else { // imprimo todos los que hayan salido
                         for (ProgramaSoftware programa : salidaLista) {
-                            // para cada "Objeto Programa" que llamo aquí "progrmama" tmb (muy original) en la lista: "salidaLista"
+                            // para cada "Objeto Programa" que llamo aquí "programa" tmb (muy original) en la lista: "salidaLista"
                             // for each = por cada
                             System.out.println(programa);
                         }

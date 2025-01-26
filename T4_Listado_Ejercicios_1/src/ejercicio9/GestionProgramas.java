@@ -2,7 +2,7 @@ package ejercicio9;
 
 /*
 Diseña también una clase llamada GestionProgramas que contendrá:
-        - un ArrayList de 25 elementos de la clase Programa
+        - un ArrayList de elementos de la clase Programa
         - métodos que sirvan para programar las funciones del siguiente menú:
 Menú
 1. Insertar nuevo programa (controlar elementos libres)
@@ -31,7 +31,6 @@ public class GestionProgramas {
         listaGestion.add(new ProgramaSoftware("Windows 11", "V.2", Funcion.SO,
                 LocalDate.of(2018,12,30),"Microsoft SA", Licencia.CCA4,155.99));
         listaGestion.add(new ProgramaSoftware("Word 365", Funcion.OFIMA,Licencia.CCA4,69.99));
-        // Van 3 => Hasta 25...    :_(
     }
 
     public void agregarProgramaEnLista(ProgramaSoftware programa) {
