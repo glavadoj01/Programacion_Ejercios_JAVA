@@ -49,6 +49,7 @@ public class Main6 {
                     System.out.println("ERROR - Opción no valida");
             }
         } while (!salir);
+        escanear.close();
     }
 
     public static void menu() {

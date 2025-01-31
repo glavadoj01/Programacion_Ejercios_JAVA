@@ -27,7 +27,7 @@ public class Main11 {
 
     public static void main(String[] args) {
         GestionVehiculos catalogoAlquiler = new GestionVehiculos();
-        ArrayList<Vehiculo> listaFiltrada = new ArrayList<>();
+        ArrayList<Vehiculo> listaFiltrada;
         boolean continuar = true;
         int opcion;
         double consumo;
@@ -54,6 +54,7 @@ public class Main11 {
                     continuar = false;
             }
         }
+        escanear.close();
     }
 
     public static int menu() {

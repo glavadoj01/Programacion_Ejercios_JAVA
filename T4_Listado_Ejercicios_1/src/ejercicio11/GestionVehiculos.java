@@ -57,7 +57,7 @@ public class GestionVehiculos {
         catalogoVehiculos.add(new Vehiculo("11111A", "Dacia", "Duster", 150, 32,45));
         catalogoVehiculos.add(new Vehiculo("22222B", "Dacia", "Duster", 150, 32,45));
         catalogoVehiculos.add(new Vehiculo("33333C", "Ford", "Mondeo", 120, 40,20));
-        catalogoVehiculos.add(new Vehiculo("44444B", "Seat", "Panda", 666, 15,30));
+        catalogoVehiculos.add(new Vehiculo("44444D", "Seat", "Panda", 666, 15,30));
         catalogoVehiculos.add(new Vehiculo("12345A",20));
         catalogoVehiculos.add(new Vehiculo("12345B",20));
         catalogoVehiculos.add(new Vehiculo("12345C",20));
@@ -69,11 +69,11 @@ public class GestionVehiculos {
         catalogoVehiculos.add(new Vehiculo("12345I",50));
         catalogoVehiculos.add(new Vehiculo("12345J",60));
 
-        for (int i = 1; i <= 14; i=i+2 ) {
+        for (int i = 0; i < 14; i=i+2 ) {
             catalogoVehiculos.get(i).setDisponible(false);
         }
 
-        for (int i = 4; i <= 13; i++ ) {
+        for (int i = 3; i < 14; i++ ) {
             catalogoVehiculos.get(i).setConsumoMedio(rand.nextDouble(10,50));
             catalogoVehiculos.get(i).setPotencia(rand.nextDouble(100,300));
         }

@@ -3,7 +3,7 @@ package ejercicio9;
 public enum Funcion {
     SO("Sistema Operativo (SO)"),
     SERVER("Servidor de Bases de Datos (SERVER)"),
-    OFIMA("Ofimática (OFIMA)"),;
+    OFIMA("Ofimática (OFIMA)");
 
     private final String name;
 

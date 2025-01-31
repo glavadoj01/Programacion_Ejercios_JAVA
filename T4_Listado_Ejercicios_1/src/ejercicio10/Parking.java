@@ -31,6 +31,7 @@ public class Parking {
     public Parking() {
         this.vehiculosEstacionados = new ArrayList<>();
         plazasLibres = 200;
+        cargarVehiculosPrueba();
     }
 
     public void entradaVehiculo(String matriculaEntrada) {
@@ -59,5 +60,11 @@ public class Parking {
 
     public ArrayList<Vehiculo> getVehiculosEstacionados() {
         return vehiculosEstacionados;
+    }
+
+    public void cargarVehiculosPrueba() {
+        for (int i = 1; i <= 100;i++) {
+            entradaVehiculo(String.valueOf(i));
+        }
     }
 }

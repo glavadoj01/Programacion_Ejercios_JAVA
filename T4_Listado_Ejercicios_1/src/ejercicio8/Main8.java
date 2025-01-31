@@ -60,6 +60,7 @@ public class Main8 {
                     System.out.println("Error: Opción no valida");
             }
         }
+        sc.close();
     }
 
     public static void menu() {

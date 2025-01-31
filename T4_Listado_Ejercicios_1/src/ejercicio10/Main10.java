@@ -54,6 +54,7 @@ public class Main10 {
                     salir = true;
             }
         }
+        escanear.close();
     }
 
     public static void crearVehiculo() {

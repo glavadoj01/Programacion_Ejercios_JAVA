@@ -95,6 +95,7 @@ public class Main9 {
                     System.out.println("ERROR - Opción no valida");
             }
         }
+        escanear.close();
     }
 
     public static void menu() {

@@ -54,6 +54,7 @@ public class Main7 {
                     System.out.println("Error - Seleccionar una opción valida");
             }
         } while (!salir);
+        escanear.close();
     }
 
     private static void menu() {
