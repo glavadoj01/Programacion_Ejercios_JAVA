@@ -17,35 +17,68 @@ import java.util.Scanner;
 
 public class App {
     static Scanner escanear = new Scanner(System.in);
+    static GestionEmpleados listaEmpleados = new GestionEmpleados();
 
     public static void main(String[] args) {
-        GestionEmpleados listaEmpleados = new GestionEmpleados();
         ArrayList<Empleado> empleadosSalida;
         Empleado empleadoSalida;
-        boolean continuar = true;
+        boolean continuar = true, conf;
         char op;
-
 
         while (continuar) {
             op = menu();
             switch (op) {
                 case 'A':
+                    empleadoSalida = buscarId();
+                    if (empleadoSalida == null) {
+                        System.out.println("No se ha encontrado un empleado con ese Id");
+                    } else {
+                        System.out.println(empleadoSalida);
+                    }
                     break;
                 case 'B':
+                    empleadosSalida = buscarCorreo();
+                    if (empleadosSalida.isEmpty()) {
+                        System.out.println("No se ha encontrado un empleado con ese correo o similar");
+                    } else {
+                        imprArrayList(empleadosSalida);
+                    }
                     break;
                 case 'C':
+                    empleadosSalida = buscarSalario();
+                    if (empleadosSalida.isEmpty()) {
+                        System.out.println("No se han encontrado empleados con ese rango de salario");
+                    } else {
+                        imprArrayList2(empleadosSalida);
+                    }
                     break;
                 case 'D':
+                    conf = actualizarSalario();
+                    if (conf) {
+                        System.out.println("El salario se ha actualizado correctamente");
+                    } else {
+                        System.out.println("No se ha actualizado el salario");
+                    }
                     break;
                 case 'E':
+                    empleadosSalida = porAnno();
+                    if (empleadosSalida.isEmpty()) {
+                        System.out.println("No se han encontrado empleados nacidos durante ese año");
+                    } else {
+                        imprArrayList(empleadosSalida);
+                    }
                     break;
                 case 'F':
+                    empleadosSalida = porMesAnno();
+                    if (empleadosSalida.isEmpty()) {
+                        System.out.println("No se han encontrado empleados nacidos durante ese año y mes");
+                    } else {
+                        imprArrayList(empleadosSalida);
+                    }
                     break;
-                    case 'G':
-                        for (Empleado e : listaEmpleados.getListaEmpleados()) {
-                            System.out.println(e);
-                        }
-                        break;
+                case 'G':
+                    listaEmpleados.mostrarTodos();
+                    break;
                 default:
                     continuar = false;
             }
@@ -53,7 +86,64 @@ public class App {
         escanear.close();
     }
 
-    public static char menu() {
+    private static Empleado buscarId() {
+        System.out.print("Ingresar Id para buscar: ");
+        String num = escanear.nextLine();
+
+        return listaEmpleados.buscarEmpleadoPorId(num);
+    }
+
+    private static ArrayList<Empleado> buscarCorreo() {
+        System.out.print("Ingresar Correo para buscar: ");
+        String correo = escanear.nextLine();
+
+        return listaEmpleados.empleadosCorreo(correo);
+    }
+
+    private static ArrayList<Empleado> buscarSalario() {
+        System.out.print("Ingresar la cota mínima de Salario: ");
+        double a = escanear.nextInt();
+        escanear.nextLine();
+
+        System.out.print("Ingresar la cota máxima de Salario: ");
+        double b = escanear.nextInt();
+        escanear.nextLine();
+
+        return listaEmpleados.filtrarPorSalario(a,b);
+    }
+
+    private static boolean actualizarSalario() {
+        System.out.print("Ingrese el Id del empleado: ");
+        String id = escanear.nextLine();
+
+        System.out.print("Ingrese el Salario nuevo: ");
+        double sal = escanear.nextDouble();
+        escanear.nextLine();
+
+        return listaEmpleados.actualizarS(id,sal);
+    }
+
+    private static ArrayList<Empleado> porAnno() {
+        System.out.print("Ingresar un año: ");
+        int ano = escanear.nextInt();
+        escanear.nextLine();
+
+        return listaEmpleados.nacidosEn(ano);
+    }
+
+    private static ArrayList<Empleado> porMesAnno() {
+        System.out.print("Ingresar un año: ");
+        int ano = escanear.nextInt();
+        escanear.nextLine();
+
+        System.out.print("Ingresar un mes (1-12): ");
+        int mes = escanear.nextInt();
+        escanear.nextLine();
+
+        return listaEmpleados.nacidosEn(ano,mes);
+    }
+
+    private static char menu() {
         char op;
         while (true) {
             System.out.print("""
@@ -67,14 +157,27 @@ public class App {
                     G - Mostrar Todos
                     S - Salir
                     Seleccionar una opción:\s""");
-            op = escanear.next().charAt(0);
-            System.out.println();
-            if ((op >= 'A' && op <= 'G') || op == 'S' ) {
+            op = escanear.nextLine().charAt(0);
+            if((op >= 'A' && op <= 'G') || op == 'S') {
                 return op;
-            } else if ((op >= 'a' && op <= 'g') || op == 's' ) {
-                return (char) (op-32);
+            } else if ((op >= 'a' && op <= 'g') || op == 's') {
+                return (char) (op - 32);
             }
             System.out.println("Opción no valida");
         }
     }
+
+    private static void imprArrayList(ArrayList<Empleado> empleados) {
+        for (Empleado e : empleados) {
+            System.out.println(e);
+        }
+    }
+
+    private static void imprArrayList2(ArrayList<Empleado> empleados) {
+        for (Empleado e : empleados) {
+            System.out.println("Empleado{Id = " + e.getId() + ",\tNombre = " + e.getNombre() +
+                                ",\tApellido = " + e.getApellido() + ",\tSalario = " + e.getSalario());
+        }
+    }
 }
+ 

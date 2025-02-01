@@ -1,6 +1,5 @@
 package ejercicio14;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Empleado {
@@ -10,7 +9,7 @@ public class Empleado {
 	private String correo;
 	private String genero;
 	private LocalDate fechaNac;
-	private BigDecimal salario;
+	private double salario;
 	private static int cont = 0;
 	
 	public Empleado (String datos) {
@@ -24,12 +23,12 @@ public class Empleado {
 		int mes = Integer.parseInt(emp[5].substring(3,5));
 		int anio = Integer.parseInt(emp[5].substring(6));
 		this.fechaNac = LocalDate.of(anio, mes, dia);
-		this.salario = new BigDecimal(emp[6]);
+		this.salario =Double.parseDouble(emp[6]);
 		cont++;
 	}
 	
 	public Empleado(String id, String nombre, String apellido, String correo,
-					String genero, LocalDate fechaNac, BigDecimal salario) {
+					String genero, LocalDate fechaNac, double salario) {
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -76,10 +75,10 @@ public class Empleado {
 	public void setFechaNac(LocalDate fechaNac) {
 		this.fechaNac = fechaNac;
 	}
-	public BigDecimal getSalario() {
+	public double getSalario() {
 		return salario;
 	}
-	public void setSalario(BigDecimal salario) {
+	public void setSalario(double salario) {
 		this.salario = salario;
 	}
 	public int getCont() {return cont;}

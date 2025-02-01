@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Ciudad {
 	private String id;
 	private String nombre;
-	private int poblacion;
+	private int poblacion;	// Población == Nº Habitantes
 	private String pais;
 	private String codigoPais;
 

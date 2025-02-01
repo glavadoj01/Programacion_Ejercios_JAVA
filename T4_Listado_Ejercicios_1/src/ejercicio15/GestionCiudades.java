@@ -28,8 +28,58 @@ public class GestionCiudades {
         cargarDatosPrueba();
     }
 
-    public ArrayList<Ciudad> getListaCiudades() {
-        return listaCiudades;
+    public Ciudad buscarCiudadPorId(String idEntr) {
+        for (Ciudad p : listaCiudades) {
+            if (p.getId().equals(idEntr)) {
+                return p;
+            }
+        }
+        return null;
+    }
+
+    public Ciudad buscarCiudadMasPoblada() {
+        Ciudad ciudadM = listaCiudades.getFirst();
+        for (Ciudad p : listaCiudades) {
+            if (p.getPoblacion() > ciudadM.getPoblacion()) {
+                ciudadM = p;
+            }
+        }
+        return ciudadM;
+    }
+
+    public void mostrarCiudadesDelPais(String pais) {
+            int contador = 0;
+            for (Ciudad p : listaCiudades) {
+                if (p.getPais().equalsIgnoreCase(pais)) {
+                    System.out.println(p);
+                    contador++;
+                }
+            }
+            if (contador == 0) {
+                System.out.println("No se encontrarón ciudades del pais: " + pais);
+            }
+    }
+
+    public static boolean compararCiudades(Ciudad c1, Ciudad c2) {
+        return c1.equals(c2);
+    }
+
+    public void mostrarVariasCiudades(String... idsEntr) {
+        for (String id : idsEntr) {
+            Ciudad c = buscarCiudadPorId(id);
+            if (c == null) {
+                System.out.println("No se encontró la ciudad con id " + id);
+            } else {
+                System.out.println(c);
+            }
+        }
+    }
+
+    public void mostrarCiudadesPaises(String... paises) {
+        for (String pais : paises) {
+            System.out.println("\nCiudades de " + pais);
+            mostrarCiudadesDelPais(pais);
+        }
     }
 
     public void mostrarTodos() {
