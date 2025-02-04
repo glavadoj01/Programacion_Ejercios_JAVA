@@ -96,7 +96,8 @@ public class Main13 {
                         }
                         if (cambio) {
                             System.out.println("No existe el \"Código\" buscado");
-                        }                    }
+                        }
+                    }
                     break;
                 case 'e':
                     System.out.print("Ingrese una posición para ver el producto asociado: ");
