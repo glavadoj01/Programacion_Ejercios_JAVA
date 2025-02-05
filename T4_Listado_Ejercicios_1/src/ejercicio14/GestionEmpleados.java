@@ -29,13 +29,12 @@ public class GestionEmpleados {
     }
 
     public Empleado buscarEmpleadoPorId(String id) {
-        Empleado empl = null;
         for (Empleado p : listaEmpleados) {
             if (p.getId().equals(id)) {
-                empl = p;
+                return p;
             }
         }
-        return empl;
+        return null;
     }
 
     public ArrayList<Empleado> empleadosCorreo(String correo) {
@@ -59,14 +58,13 @@ public class GestionEmpleados {
     }
 
     public boolean actualizarS(String id, double sal) {
-        boolean actualizado = false;
         for (Empleado p : listaEmpleados) {
             if (p.getId().equals(id)) {
                 p.setSalario(sal);
-                actualizado = true;
+                return true;
             }
         }
-        return actualizado;
+        return false;
     }
 
     public ArrayList<Empleado> nacidosEn(int ano) {
