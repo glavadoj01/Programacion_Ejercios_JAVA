@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: ejercicio13.Main13
+Class-Path: C:\Users\Gonzalo\OneDrive\IntelliJ Proyectos\T4_Listado_Ejer
+ cicios_1\src\ejercicio13
+

@@ -2,7 +2,7 @@ package examen1;
 
 import java.util.Scanner;
 
-public class PrincipalTest {
+public class Main {
     static Scanner escanear = new Scanner(System.in);
     static Agenda agenda = new Agenda();
 
@@ -58,7 +58,7 @@ public class PrincipalTest {
         }
     }
 
-    private static void nuevoC() {
+    public static void nuevoC() {
         String nombre, telefono;
         System.out.println("***NUEVO CONTACTO***");
         System.out.print("\nIngresar Nombre: ");
