@@ -9,10 +9,12 @@ public class ColeccionCuentas {
 
 	
 	public ColeccionCuentas() {
-		Cliente [] clientes = {new Cliente("1", "Sara Baras", "654456777"), new Cliente("2", "Paloma Alba", "653336777"), 
-				new Cliente("3", "Ferm�n Cacho", "37377377"), new Cliente("4", "Gimena Asa", "388399399")};
 		Random rnd = new Random();
-		
+		Cliente [] clientes = {new Cliente("1", "Sara Baras", "654456777"),
+				new Cliente("2", "Paloma Alba", "653336777"),
+				new Cliente("3", "Ferm�n Cacho", "37377377"),
+				new Cliente("4", "Gimena Asa", "388399399")};
+
 		for (int i = 0; i < 10; i++) {
 			listadoCuentas.add(new CuentaBancaria("1000"+i, clientes[rnd.nextInt(clientes.length)], 2000));
 		}
@@ -50,6 +52,10 @@ public class ColeccionCuentas {
 	public boolean transferirCantidad(String cuentaOrigen, String cuentaDestino, double cantidad) {
 		CuentaBancaria cuentaO = buscarCuenta(cuentaOrigen);
 		CuentaBancaria cuentaD = buscarCuenta(cuentaDestino);
+		if (cuentaO == null || cuentaD == null) {
+			return false;
+		}
+
         return cuentaO.transferencia(cuentaD, cantidad);
 	}
 }
