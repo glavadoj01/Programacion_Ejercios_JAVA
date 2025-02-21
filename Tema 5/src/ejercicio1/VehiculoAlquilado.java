@@ -16,6 +16,7 @@ public class VehiculoAlquilado {
 
     public VehiculoAlquilado(Vehiculo vehiculo, Cliente cliente, LocalDate fechaAlquiler, int diasAlquiler) {
         this.vehiculo = vehiculo;
+        this.vehiculo.setDisponible(false);
         this.cliente = cliente;
         this.fechaAlquiler = fechaAlquiler;
         this.diasAlquiler = diasAlquiler;
@@ -45,15 +46,16 @@ public class VehiculoAlquilado {
     public void setDiasAlquiler(int diasAlquiler) {
         this.diasAlquiler = diasAlquiler;
     }
+
     public double getImporteTotal() {
         return this.vehiculo.getTarifa() * this.diasAlquiler;
     }
 
     @Override
     public String toString() {
-        return "VehiculoAlquilado{ " +
-                vehiculo + "\t;" +
-                cliente + "\t;" +
+        return "VehiculoAlquilado{\n" +
+                vehiculo + "\n" +
+                cliente + "\n" +
                 "Fecha de Alquiler = " + fechaAlquiler + "\t;" +
                 "Dias de alquiler = " + diasAlquiler + '}';
     }
