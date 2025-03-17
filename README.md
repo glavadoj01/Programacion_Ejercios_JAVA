@@ -28,7 +28,7 @@ el IDE y el protocolo GIT, ademas del PDF de referencia.<br>
       + Tema 5
       + 2EV_ExamenDeSegundo
       + Tema 6
-         ++ Tema 6 Maven (Actividad 2)
+         + Tema 6 Maven (Actividad 2)
       + 2EV_Examen2 - Marzo
 
    + 3ª Evaluación:
@@ -43,6 +43,9 @@ el IDE y el protocolo GIT, ademas del PDF de referencia.<br>
    la cuenta del centro y se asocia a la cuenta educativa en Drive => "Compartido conmigo")<br>
    
    + https://drive.google.com/drive/folders/14OH6-prI2_5eEPbZvw8eNKJWbbuhWEKr?usp=sharing
+
+   Videos Paso a paso - Realización de ejercicios en JAVA-FIGMA
+   + https://drive.google.com/drive/folders/116ojXuqCSz_FehHiCjtXG3AKiKRjtmfg?usp=drive_link
 
 ## Otras asignaturas - DRIVE
    
