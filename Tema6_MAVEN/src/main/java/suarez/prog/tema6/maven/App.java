@@ -1,7 +1,6 @@
 package suarez.prog.tema6.maven;
 import org.joda.time.DateTime;
 
-
 /*
 Crea un proyecto Maven e incluye en el mismo la dependencia a la API JodaTime.
     Este proyecto debe contener una función que reciba como parámetro un array de fechas (JodaTime)
