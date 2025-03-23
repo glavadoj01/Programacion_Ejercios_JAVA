@@ -27,19 +27,26 @@ En cada Proyecto podemos encontrar la estructura habitual de carpetas/archivos q
       + Tema 5
       + 2EV_ExamenDeSegundo
       + Tema 6
-         + Tema 6 Maven (Actividad 2)
+         + Tema 6 Actividad 2 - Proyecto Maven independiente
       + 2EV_Examen2 - Marzo
 
    + 3ª Evaluación:
       + Tema 7 - WIP
+      + Tema 9 - WIP
 
-   + Extra - Acepta el Reto: Problemas de Herencias y Terrenos<br>
+   + RetoHerencia - Propuesta Extra de la web [Acepta el Reto](https://aceptaelreto.com/problem/statement.php?id=103)<br>
+      Problemas de Herencias y Terrenos<br>
       Integración mediante el método de Suma de elementos finitos
 
 ## Para alumnos del centro Suarez de Figueroa:
    
-   + Tambien disponible (hasta el Tema 4) en el [Drive del centro](https://drive.google.com/drive/folders/14OH6-prI2_5eEPbZvw8eNKJWbbuhWEKr?usp=sharing)<br>
-   La entrada se valida con la cuenta del centro y se asocia a la cuenta educativa en Drive => "Compartido conmigo"
+   Contenido disponible para alumnos del IES Suarez de Figueroa<br>
+   La entrada se valida accediendo con la cuenta del centro (tuUsuario@suarezdefigueroa.es)<br>
+   Se asocia a la cuenta educativa en Drive => "Compartido conmigo"
+
+   + [Contenido de programación](https://drive.google.com/drive/folders/14OH6-prI2_5eEPbZvw8eNKJWbbuhWEKr?usp=sharing) - 
+      Incliuye hasta el T4, abarcando el contenido previo a GitHub
+   
    
 
    + [Videos Paso a paso](https://drive.google.com/drive/folders/116ojXuqCSz_FehHiCjtXG3AKiKRjtmfg?usp=drive_link) - Realización de ejercicios en JAVA-FIGMA
