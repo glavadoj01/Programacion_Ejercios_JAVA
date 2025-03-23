@@ -53,13 +53,6 @@ public class Main12 {
                         System.out.println("La contraseña generada no es Fuerte");
                     }
                     break;
-                case 'D':
-                    // Generar Contraseña 2025
-                    System.out.print("\nIngresar una longitud: ");
-                    num = escanear.nextInt();
-                    escanear.nextLine();
-                    Password contrasena4 = new Password(num, "2025");
-                    break;
                 default:
                     continuar = false;
             }
@@ -75,14 +68,13 @@ public class Main12 {
                     A - Generar Contraseña por defecto
                     B - Generar Contraseña con longitud
                     C - Verificar Sí es Fuerte
-                    D - Generar Contraseña 2025 (WIP)
                     S - Salir
                     Seleccionar una opción:\s""");
             op = escanear.next().charAt(0);
             escanear.nextLine();
-            if ((op >= 'A' && op <= 'D') || op == 'S') {
+            if ((op >= 'A' && op <= 'C') || op == 'S') {
                 return op;
-            } else if ((op >= 'a' && op <= 'd') || op == 's') {
+            } else if ((op >= 'a' && op <= 'c') || op == 's') {
                 op = (char) (op - 32);
                 return op;
             }
