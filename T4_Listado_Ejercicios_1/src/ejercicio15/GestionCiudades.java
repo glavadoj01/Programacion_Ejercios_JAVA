@@ -97,7 +97,6 @@ public class GestionCiudades {
                 listaCiudades.add(new Ciudad(string));
             }
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

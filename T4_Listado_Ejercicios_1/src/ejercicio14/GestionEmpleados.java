@@ -102,7 +102,6 @@ public class GestionEmpleados {
                 listaEmpleados.add(new Empleado(string));
             }
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

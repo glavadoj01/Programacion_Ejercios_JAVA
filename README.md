@@ -1,38 +1,42 @@
 #  W.I.P.
 
-# Repositorio de actividades - DAW - Programación<br>Perteneciente al alumno : Gonzalo Lavado Jaén
+# Repositorio de actividades
+# T.S. DAW - Asignatura/Modulo Programación
 
+## Alumno : Gonzalo Lavado Jaén
 ## Descripción
 Cada carpeta corresponde a un Proyecto Java del IDE IntelliJ IDEA.
-<br><br>
+
 Por lo que se puede exportar directamente en el directorio raiz del IDE.
-<br><br>
+
 En cada Proyecto podemos encontrar la estructura habitual de carpetas/archivos que proporciona el IDE y el protocolo GIT, ademas del PDF de referencia.
 
 ### Orden:
    + 1ª Evaluación:
-      + T2_Introducción
-      + T3_Iniciales
-      + T3_Profundizacióm
-      + 1EV_Examen_Noviembre   Pass: valencia
-      + T3_Arrays (Incluye Ejemplo/Expliación Matrices)
-      + T3_Funciones
-      + 1EV_Examen_Diciembre   Pass: alepo
+      + [T2_Introducción](./T2_Introduccion/)
+      + [T3_Iniciales](./T3_Iniciales/)
+      + [T3_Profundizacióm](./T3_Profundizacion/)
+      + [1EV_Examen_Noviembre](./1EV_Examen_Noviembre/)   Pass: valencia
+      + [T3_Arrays](./T3_Arrays/) (Incluye Ejemplo/Expliación Matrices)
+      + [T3_Funciones](./T3_Funciones/)
+      + [1EV_Examen_Diciembre](./1EV_Examen_Diciembre/)   Pass: alepo
       + 1EV_Examen_2_Prueba (WIP)
         
    + 2ª Evaluación:
-      + Conecta_4
-      + T4_Listado_Ejercicios_1
-      + 2EV_Examen1 - Febrero
-      + Tema 5
-      + 2EV_ExamenDeSegundo
-      + Tema 6
-         + Tema 6 Actividad 2 - Proyecto Maven independiente
-      + 2EV_Examen2 - Marzo
+      + [Conecta_4](./Conecta_4/)
+      + [T4_Listado_Ejercicios_1](./T4_Listado_Ejercicios_1/)
+      + [2EV_Examen1](./2EV_Examen1/) - Febrero
+      + Tema 5 - [Composición y Herencias](./Tema5/)
+      + [2EV_ExamenDeSegundo](./2EV_ExamenDeSegundo/)
+      + Tema 6 - [Ampliación de Clases](./Tema6/)
+         + Tema 6 Actividad 2 - [Proyecto Maven](./Tema6_MAVEN/) independiente
+      + [2EV_Examen2]() - Marzo
 
    + 3ª Evaluación:
-      + Tema 7 - WIP
-      + Tema 9 - WIP
+      + Tema 7 - [Colecciones](./Tema7-Colecciones/)
+      + Tema 9 - [Control y Manejo de Excepciones](./Tema9-Control-Excepciones)
+      + Tema 10 - [Gestión de Entradas y Salidas](./Tema10-JavaIO)
+      + Tema 11 - [Conexión con Bases de Datos](./Tema11-BBDD)
 
    + RetoHerencia - Propuesta Extra de la web [Acepta el Reto](https://aceptaelreto.com/problem/statement.php?id=103)<br>
       Problemas de Herencias y Terrenos<br>

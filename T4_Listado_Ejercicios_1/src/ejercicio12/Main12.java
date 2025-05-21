@@ -34,6 +34,7 @@ public class Main12 {
                 case 'A':
                     // Generar Contraseña por defecto
                     Password contrasena1 = new Password();
+                    System.out.println("\nContraseña generada: " + contrasena1.getContrasena());
                     break;
                 case 'B':
                     // Generar Contraseña con longitud
@@ -41,6 +42,7 @@ public class Main12 {
                     num = escanear.nextInt();
                     escanear.nextLine();
                     Password contrasena2 = new Password(num);
+                    System.out.println("\nContraseña generada: " + contrasena2.getContrasena());
                     break;
                 case 'C':
                     // Verificar Sí es Fuerte
