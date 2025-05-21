@@ -1,0 +1,6 @@
+Hola
+Este mensaje está siendo leído
+por algún script de lectura
+
+     Proceso OK, Saludos
+        \m/ (oo) \m/

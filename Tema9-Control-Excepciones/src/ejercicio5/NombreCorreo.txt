@@ -1,0 +1,4 @@
+Alumno 1;correo1@correo.es
+Alumno 2;correo2@correo.com
+Alumno 3;correo3@yahoo.com
+Alumno 4;mail4@terra.net
