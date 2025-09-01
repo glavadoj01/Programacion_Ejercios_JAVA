@@ -1,0 +1,5 @@
+Dado el archivo de texto "participantes.csv". Que nos muestra una lista de DNIs, Nombres y Apellidos; hay que cargar los valores del archivo en una colección de tipo Map<DNI, NombreApellido>, igual que en el caso anterior ( Se puede utilizar la clase  Participante).
+
+Posteriormente, de debe mostrar un reducido grupo de participantes al azar (20 - 30) por pantalla, para que el usuario seleccione un DNI.
+
+Dado este DNI, hay que buscar todos los datos del participante correspondiente, que se hallan en la base de datos en la tabla participantes y mostrarlo por pantalla.

@@ -1,0 +1,24 @@
+S18_1342;1937 Lincoln Berline;Vintage Cars;60.62;102.74
+S18_1367;1936 Mercedes-Benz 500K Special Roadster;Vintage Cars;24.26;53.91
+S18_1749;1917 Grand Touring Sedan;Vintage Cars;86.7;170.0
+S18_2248;1911 Ford Town Car;Vintage Cars;33.3;60.54
+S18_2325;1932 Model A Ford J-Coupe;Vintage Cars;58.48;127.13
+S18_2795;1928 Mercedes-Benz SSK;Vintage Cars;72.56;168.75
+S18_2949;1913 Ford Model T Speedster;Vintage Cars;60.78;101.31
+S18_2957;1934 Ford V8 Coupe;Vintage Cars;34.35;62.46
+S18_3136;18th Century Vintage Horse Carriage;Vintage Cars;60.74;104.72
+S18_3140;1903 Ford Model A;Vintage Cars;68.3;136.59
+S18_3320;1917 Maxwell Touring Car;Vintage Cars;57.54;99.21
+S18_3856;1941 Chevrolet Special Deluxe Cabriolet;Vintage Cars;64.58;105.87
+S18_4409;1932 Alfa Romeo 8C2300 Spider Sport;Vintage Cars;43.26;92.03
+S18_4522;1904 Buick Runabout;Vintage Cars;52.66;87.77
+S18_4668;1939 Cadillac Limousine;Vintage Cars;23.14;50.31
+S24_1937;1939 Chevrolet Deluxe Coupe;Vintage Cars;22.57;33.19
+S24_2022;1938 Cadillac V-16 Presidential Limousine;Vintage Cars;20.61;44.8
+S24_3151;1912 Ford Model T Delivery Wagon;Vintage Cars;46.91;88.51
+S24_3420;1937 Horch 930V Limousine;Vintage Cars;26.3;65.75
+S24_3816;1940 Ford Delivery Sedan;Vintage Cars;48.64;83.86
+S24_3969;1936 Mercedes Benz 500k Roadster;Vintage Cars;21.75;41.03
+S24_4258;1936 Chrysler Airflow;Vintage Cars;57.46;97.39
+S32_4289;1928 Ford Phaeton Deluxe;Vintage Cars;33.02;68.79
+S50_1341;1930 Buick Marquette Phaeton;Vintage Cars;27.06;43.64

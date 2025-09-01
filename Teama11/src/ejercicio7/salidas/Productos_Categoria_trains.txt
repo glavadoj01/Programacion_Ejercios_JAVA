@@ -1,0 +1,4 @@
+productCode;productName;productLine;buyPrice;MSRP
+S18_3259;Collectable Wooden Train;Trains;67.56;100.84
+S32_3207;1950's Chicago Surface Lines Streetcar;Trains;26.72;62.14
+S50_1514;1962 City of Detroit Streetcar;Trains;37.49;58.58

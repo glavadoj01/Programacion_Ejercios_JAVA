@@ -1,0 +1,4 @@
+INSERT INTO evento VALUES (null, "Marathon Fontanes", 42, "Marathon internacional", 6, 3, '2024-12-25');
+UPDATE participante set nombre = "Romualdo" where id = 262;
+DELETE FROM participante where nombre="Yvonne" and apellidos = "Yang";
+SELECT count(inscritos.idparticipante) from inscritos inner join evento on inscritos.idevento = evento.Id   where evento.Nombre = "MTB Zafra-Mérida";

@@ -1,0 +1,3 @@
+S80_5000, Caravela La Niña, Ships, 1:50, Unimax Art Galleries, Caravela de Colon, 300, 250, 1500
+2, Motorcycles
+Motorcycles, Classic Cars, 50, 200
